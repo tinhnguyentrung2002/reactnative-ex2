@@ -6,9 +6,6 @@ const DetailScreen = ({navigation}) =>{
           <View style={detailStyle.container}>
                <Text>Details Screen
                </Text>
-               <Button style={detailStyle.button} mode="contained" onPress={() => navigation.navigate('Person')}>
-               Go to person
-          </Button>
           </View>
      )
 }
@@ -19,9 +16,5 @@ const detailStyle = StyleSheet.create({
           alignItems:'center',
           justifyContent:'center'
      },
-     button:{
-          marginTop: 5,
-          backgroundColor: 'navy',
-          borderRadius: 0
-     }
+
 })

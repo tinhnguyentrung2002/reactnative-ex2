@@ -19,8 +19,7 @@ const CustomNavigationBar = ({ navigation, route, options, back }) => {
           onDismiss={closeMenu}
           anchor={<Appbar.Action icon="dots-vertical" onPress={openMenu} />}>
           <Menu.Item onPress={() => navigation.navigate('Home')} title="Home" />
-          <Menu.Item onPress={() => navigation.navigate('Details')} title="Detail" />
-          <Menu.Item onPress={() => navigation.navigate('Person')} title="Person"/>
+          <Menu.Item onPress={() => navigation.navigate('Person')} title="Person" />
           <Menu.Item onPress={() => console.log('Option 3 was pressed')} title="Option 3" disabled />
         </Menu>
       ) : null}
